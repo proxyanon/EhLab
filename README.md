@@ -3,6 +3,6 @@ O EhLab (Ethical Hacker Laboratory) é um laboratório de pentest grátis e de c
 
 # Contato
 <ul>
-  <li>Email : danielfreire56@hotmail.com</li>
-  <li>Twitter : @DanielFreire00</li>
+  <li><b>Email :</b> danielfreire56@hotmail.com</li>
+  <li><b>Twitter :</b> @DanielFreire00</li>
 </ul>
