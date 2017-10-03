@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+*{padding: 0px;margin: 0px;box-sizing: border-box;}
+body{width: 100%;height: 100%;font-family: sans-serif;}
+header.top{width: 100%;background-color: black;position: fixed;height: 40px;border-bottom: 3px solid orange;z-index: 99;}
+header.top nav {width: 100%;position: fixed;}
+header.top nav ul {list-style: none;}
+header.top nav ul li {color: white;display: inline-block;padding:7px;}
+header.top nav ul li h1 {font-weight: normal;font-size: 20px;margin-left: 4px;font-family: 'Roboto';}
+header.top nav ul li.right {float: right;margin-top: 2px;margin-right: 5px;}
+header.top nav ul li.right a {color: black;padding: 5px;background-color: white;border-radius:5px;text-decoration: none;font-weight: bold;font-size: 15px;font-family: arial;}
+section.main {position: absolute;width: 100%;height: 100%;top: 50px;}
+section.main nav.mini_menu ul {list-style: none;}
+section.main nav.mini_menu ul li {display: inline-block;padding: 10px;background:rgb(241,241,241);background:linear-gradient(to bottom, rgb(230,230,230), rgb(241,241,241));font-size: 14px;color: gray;font-weight: inherit;border-top-right-radius: 2px;border-top-left-radius: 2px;margin-left: 5px;border:1px solid rgb(241,241,241);}
+section.main nav.mini_menu ul li a {text-decoration: none;color: gray;font-family: 'Roboto'}
+section.main nav.mini_menu ul li:hover{background: white;border:1px solid rgb(241,241,241);border-bottom: 0px;}
+section.main nav.mini_menu ul li a:focus {color: black;font-weight: 900;}
+section.main nav.mini_menu ul li.default {background:white;border-bottom: 0px;}
+section.main nav.mini_menu ul li.default a {color: black;font-weight: 900;}
+section.main section.content {width: 99%;border:1px solid rgb(241,241,241);position: absolute;left: 50%;right: 50%;margin-left: -49.7%;border-top: 0px;padding-bottom: 15px;border-bottom: 0px;}
+section.main section.content h1 {margin: 10px;}
+section.main section.content hr {height: 0px;background-color: orange;color: rgb(241,241,241);}
+section.main section.content div.disclaimer {margin: 5px;margin-top: 20px;}
+section.main section.content div.disclaimer_content {margin-top: 20px;width: 95%;margin-left: 30px;}
+section.main section.content div.disclaimer_content ul h2 {font-size: 22px;border-left: 3px solid #125dfe;padding-left: 10px;margin-top: 20px;}
+section.main section.content div.disclaimer_content ul li {margin-left: 30px;margin-top: 8px;}
+section.main section.content div.disclaimer_content ul li p {width: 89%;text-align: justify;font-family: 'Roboto';}
+section.main section.content div.disclaimer_content ul a {padding: 5px;background-color: orange;color: white;border-radius: 5px;text-decoration: none;display: block;width:120px;text-align: center;margin-top: 8px;margin-left: 25px;}
+section.main section.content div.disclaimer_content div#flag_pass {display:none;position: absolute;width: 100%;height: 100%;margin-left: -30px;background-color: rgba(0,0,0,.8);top: 0px;padding: 5px;}
+section.main section.content div.disclaimer_content div#flag_pass form {width: 350px;color: white;background-color: black;padding: 10px;left: 50%;right: 50%;position: absolute;margin-left: -175px;text-align: center;border-radius: 5px;top: 10%;}
+section.main section.content div.disclaimer_content div#flag_pass h3 {font-family: 'Roboto', sans-serif;font-size: 17px;font-weight: normal;}
+section.main section.content div.disclaimer_content div#flag_pass img {margin-top: 15px;padding-bottom: 5px;}
+section.main section.content div.disclaimer_content div#flag_pass input {width: 100%;border:1px solid transparent;background-color: rgb(241,241,241);padding: 5px;border-radius: 5px;margin-top: 10px;font-size: 14px;}
+section.main section.content div.disclaimer_content div#flag_pass input[type="submit"] {background-color: orange;color: white;cursor: pointer;}
+section.main section.content div.disclaimer_content div#flag_pass span.close {float: right;padding: 5px;background-color: white;color: black;font-size: 16px;font-weight: bold;cursor: pointer;width: 25px;text-align: center;height: 25px;border-radius: 3px;}
+section.main section.content div.disclaimer_content div#flag_file {display:none;position: absolute;width: 100%;height: 100%;margin-left: -30px;background-color: rgba(0,0,0,.8);top: 0px;padding: 5px;}
+section.main section.content div.disclaimer_content div#flag_file form {width: 350px;color: white;background-color: black;padding: 10px;left: 50%;right: 50%;position: absolute;margin-left: -175px;text-align: center;border-radius: 5px;top: 10%;}
+section.main section.content div.disclaimer_content div#flag_file h3 {font-family: 'Roboto', sans-serif;font-size: 17px;font-weight: normal;}
+section.main section.content div.disclaimer_content div#flag_file img {margin-top: 15px;padding-bottom: 5px;}
+section.main section.content div.disclaimer_content div#flag_file input {width: 100%;border:1px solid transparent;background-color: rgb(241,241,241);padding: 5px;border-radius: 5px;margin-top: 10px;font-size: 14px;}
+section.main section.content div.disclaimer_content div#flag_file input[type="submit"] {background-color: orange;color: white;cursor: pointer;}
+section.main section.content div.disclaimer_content div#flag_file span.close {float: right;padding: 5px;background-color: white;color: black;font-size: 16px;font-weight: bold;cursor: pointer;width: 25px;text-align: center;height: 25px;border-radius: 3px;}
+section.main section.content div.disclaimer_content div#flag_true {display:none;position: absolute;width: 100%;height: 100%;margin-left: -30px;background-color: rgba(0,0,0,.8);top: 0px;padding: 5px;}
+section.main section.content div.disclaimer_content div#flag_true form {width: 350px;color: white;background-color: black;padding: 10px;left: 50%;right: 50%;position: absolute;margin-left: -175px;text-align: center;border-radius: 5px;top: 10%;}
+section.main section.content div.disclaimer_content div#flag_true h3 {font-family: 'Roboto', sans-serif;font-size: 17px;font-weight: normal;}
+section.main section.content div.disclaimer_content div#flag_true img {margin-top: 15px;padding-bottom: 5px;}
+section.main section.content div.disclaimer_content div#flag_true input {width: 100%;border:1px solid transparent;background-color: rgb(241,241,241);padding: 5px;border-radius: 5px;margin-top: 10px;font-size: 14px;}
+section.main section.content div.disclaimer_content div#flag_true input[type="submit"] {background-color: orange;color: white;cursor: pointer;}
+section.main section.content div.disclaimer_content div#flag_true span.close {float: right;padding: 5px;background-color: white;color: black;font-size: 16px;font-weight: bold;cursor: pointer;width: 25px;text-align: center;height: 25px;border-radius: 3px;}
