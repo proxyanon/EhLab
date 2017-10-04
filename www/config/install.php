@@ -1,6 +1,7 @@
 <?php
 /*
-*	@version : 3.0.0
+*	@Author : Daniel Victor Freire Feitosa
+*	@Version : 3.0.0
 *	Instalação expressa EhLab 3.0
 */
 $host = "localhost";$user = "root";$pass = ""; // altere se necessário
@@ -17,7 +18,7 @@ $stmt = $con->prepare("CREATE TABLE notices (id int(11) NOT NULL,notice mediumte
 $stmt->execute();
 $stmt = $con->prepare("INSERT INTO notices (id, notice, img, title) VALUES (1, 'Cicada 3301 &eacute; um nome dado a uma organiza&ccedil;&atilde;o enigm&aacute;tica que, em seis ocasi&otilde;es, postou um conjunto de quebra-cabe&ccedil;as e jogos de realidade alternativa complexos para possivelmente recrutar decifradores de c&oacute;digos do p&uacute;blico.\r\n<br><br>\r\nO primeiro quebra-cabe&ccedil;a da internet come&ccedil;ou em 4 de janeiro de 2012 e durou por aproximadamente um m&ecirc;s.', 'img/cicada.png', 'Cicada 3301'), (2, 'Criptografia &eacute; o estudo dos princ&iacute;pios e t&eacute;cnicas pelas quais a informa&ccedil;&atilde;o pode ser transformada da sua forma original para outra ileg&iacute;vel, de forma que possa ser conhecida apenas por seu destinat&aacute;rio o que a torna dif&iacute;cil de ser lida por algu&eacute;m n&atilde;o autorizado. \r\n<br><br>\r\n&Eacute; um ramo da Matem&aacute;tica, parte da Criptologia. H&aacute; dois tipos de chaves criptogr&aacute;ficas: chaves sim&eacute;tricas (criptografia de chave &uacute;nica) e chaves assim&eacute;tricas (criptografia de chave p&uacute;blica).', 'img/cript.png', 'Criptografia')");
 $stmt->execute();
-$stmt = $con->prepare("CREATE TABLE score (id int(11) NOT NULL,pass int(11) NOT NULL,file int(11) NOT NULL,true_f int(11) NOT NULL) ENGINE=MyISAM DEFAULT CHARSET=utf8");
+$stmt = $con->prepare("CREATE TABLE score (id int(11) NOT NULL,pass int(11) NOT NULL,file int(11) NOT NULL,true_f int(11) NOT NULL, firewall int(11) NOT NULL) ENGINE=MyISAM DEFAULT CHARSET=utf8");
 $stmt->execute();
 $stmt = $con->prepare("INSERT INTO score (id, pass, file, true_f) VALUES (1, 0, 0, 0)");
 $stmt->execute();
