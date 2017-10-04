@@ -1,9 +1,9 @@
 <?php
 /*
-*	@Author : Daniel Victor Freire Feitosa
-*	@Version : 3.0.0
+*	@version : 3.0.0
 *	Instalação expressa EhLab 3.0
 */
+$passwd_admin = md5(rand()); // gera uma senha aleatória para o usuário administrador
 $host = "localhost";$user = "root";$pass = ""; // altere se necessário
 $con = new PDO("mysql:host=".$host.";dbname=", $user, $pass);
 $stmt = $con->prepare("CREATE DATABASE ehlab3");
@@ -12,7 +12,7 @@ $stmt = $con->prepare("USE ehlab3");
 $stmt->execute();
 $stmt = $con->prepare("CREATE TABLE administrators (id int(11) NOT NULL,username varchar(155) NOT NULL,password varchar(200) NOT NULL) ENGINE=MyISAM DEFAULT CHARSET=utf8");
 $stmt->execute();
-$stmt = $con->prepare("INSERT INTO administrators (id, username, password) VALUES (1, 'administrator', '469790dcf941cbef5d5a247e937ef20b')");
+$stmt = $con->prepare("INSERT INTO administrators (id, username, password) VALUES (1, 'administrator', '".$passwd_admin."')");
 $stmt->execute();
 $stmt = $con->prepare("CREATE TABLE notices (id int(11) NOT NULL,notice mediumtext NOT NULL,img varchar(155) NOT NULL,title varchar(155) NOT NULL) ENGINE=MyISAM DEFAULT CHARSET=utf8");
 $stmt->execute();
@@ -41,12 +41,13 @@ $stmt->execute();
 	<meta charset="utf-8">
 	<title>Instalando EhLab 3</title>
 	<style type="text/css">
+		@import url('https://fonts.googleapis.com/css?family=Roboto');
 		*{padding: 0px;box-sizing: border-box;margin:0px;}
 		body{width: 100%;height: 100%;background-color: black;background-image: url('https://images7.alphacoders.com/443/443779.jpg');background-size: 100%;}
 		section.success{position: absolute;width: 100%;padding: 8px;top: 25%;text-align: center;background-color: rgba(0,0,0,.85);z-index: 99;padding-bottom: 40px;padding-top: 20px;}
 		section.success h1 {font-family: arial, sans-serif;font-weight: normal;color: white;font-size: 2em;}
 		section.success a{text-decoration: none;padding: 8px;background-color: orange;border-radius: 5px;color: white;font-weight: normal;font-family: arial;font-weight: bold;}
-		section.success p {font-family: arial;color: white;font-size: 14px;position: relative;top: 10px;}
+		section.success p {font-family: 'Roboto', sans-serif;color: white;font-size: 14px;position: relative;top: 10px;}
 	</style>
 </head>
 <body>
