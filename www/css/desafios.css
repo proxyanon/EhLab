@@ -45,4 +45,11 @@ section.main section.content div.disclaimer_content div#flag_true h3 {font-famil
 section.main section.content div.disclaimer_content div#flag_true img {margin-top: 15px;padding-bottom: 5px;}
 section.main section.content div.disclaimer_content div#flag_true input {width: 100%;border:1px solid transparent;background-color: rgb(241,241,241);padding: 5px;border-radius: 5px;margin-top: 10px;font-size: 14px;}
 section.main section.content div.disclaimer_content div#flag_true input[type="submit"] {background-color: orange;color: white;cursor: pointer;}
-section.main section.content div.disclaimer_content div#flag_true span.close {float: right;padding: 5px;background-color: white;color: black;font-size: 16px;font-weight: bold;cursor: pointer;width: 25px;text-align: center;height: 25px;border-radius: 3px;}
+section.main section.content div.disclaimer_content div.right_div {float: right;width:400px;width: 50%;margin-top: -15.8%;}
+section.main section.content div.disclaimer_content div#flag_friewall {display:none;position: absolute;width: 100%;height: 100%;background-color: rgba(0,0,0,.8);top: 0px;padding: 5px;left: 0px;}
+section.main section.content div.disclaimer_content div#flag_friewall form {width: 350px;color: white;background-color: black;padding: 10px;left: 50%;right: 50%;position: absolute;margin-left: -175px;text-align: center;border-radius: 5px;top: 10%;}
+section.main section.content div.disclaimer_content div#flag_friewall h3 {font-family: 'Roboto', sans-serif;font-size: 17px;font-weight: normal;}
+section.main section.content div.disclaimer_content div#flag_friewall img {margin-top: 15px;padding-bottom: 5px;}
+section.main section.content div.disclaimer_content div#flag_friewall input {width: 100%;border:1px solid transparent;background-color: rgb(241,241,241);padding: 5px;border-radius: 5px;margin-top: 10px;font-size: 14px;}
+section.main section.content div.disclaimer_content div#flag_friewall input[type="submit"] {background-color: orange;color: white;cursor: pointer;}
+section.main section.content div.disclaimer_content div#flag_friewall span.close {float: right;padding: 5px;background-color: white;color: black;font-size: 16px;font-weight: bold;cursor: pointer;width: 25px;text-align: center;height: 25px;border-radius: 3px;}
