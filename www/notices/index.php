@@ -62,9 +62,9 @@ ini_set("default_charset", "utf-8");
 				if($stmt->rowCount() > 0):
 					while($row = $stmt->fetchObject()):
 			?>
-					<h2><?php echo utf8_encode($row->title);?></h2><br>
+					<h2><?php echo $row->title;?></h2><br>
 						<li class="img"><img src="<?php echo $row->img;?>" width="280"></li>
-						<li><p><?php echo utf8_encode($row->notice);?></p> <a href="notices?id=<?php echo $row->id;?>">Visualizar</a></li><br>
+						<li><p><?php echo $row->notice;?></p> <a href="notices?id=<?php echo $row->id;?>">Visualizar</a></li><br>
 			<?php 
 					endwhile;
 				else:

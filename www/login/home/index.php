@@ -114,7 +114,7 @@ else:
 								else:
 									while($row = $query->fetchObject()):
 							?>
-							<p><a href="index.php?act=del&id=<?php echo $row->id;?>">X</a> <?php echo utf8_encode($row->title);endwhile;endif;?></p>
+							<p><a href="index.php?act=del&id=<?php echo $row->id;?>">X</a> <?php echo $row->title;endwhile;endif;?></p>
 							<?php 
 								if(isset($_GET['act']) && isset($_GET['id'])):
 									$id_g = filter_input(INPUT_GET, "id", FILTER_VALIDATE_INT);

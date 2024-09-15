@@ -68,7 +68,7 @@ session_start();
 					*	[Pegar versão do MySQL] http://url/notices?id=-1 union select 1,2,3,@@version
 					*/
 			?>
-					<h2><?php echo utf8_encode($row->title);?></h2><br>
+					<h2><?php echo $row->title;?></h2><br>
 						<li class="img"><img src="<?php echo $row->img;?>" width="280"></li>
 						<li><p><?php echo $row->notice;?></p></li>
 			<?php 
