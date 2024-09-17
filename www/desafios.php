@@ -3,7 +3,7 @@
 *	@Author : Daniel Victor Freire Feitosa	
 *	@Vesion : 3.0.0	
 */
-session_start();
+@session_start();
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -214,9 +214,7 @@ $(document).ready(function(){$("#close_firewall").click(function(){$("#flag_frie
 </section>
 <?php
 	else:
-?>
-<!-- Código da página de instalação -->
-<?php
+        include_once('./config/install.php');
 	endif;
 ?>
 </body>

@@ -3,7 +3,7 @@
 *	@Author : Daniel Victor Freire Feitosa	
 *	@Vesion : 3.0.0	
 */
-session_start();
+@session_start();
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">

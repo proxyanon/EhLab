@@ -3,7 +3,7 @@
 *	@Author : Daniel Victor Freire Feitosa	
 *	@Vesion : 3.0.0	
 */
-session_start();
+@session_start();
 ini_set("default_charset", "utf-8");
 ?>
 <!DOCTYPE html>

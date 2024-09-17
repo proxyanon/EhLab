@@ -4,7 +4,7 @@
 *	@Vesion : 3.0.0	
 */
 error_reporting(E_ALL);
-session_start();
+@session_start();
 if(!isset($_SESSION['login'])):
 	header("Location: ../index.php");
 	echo '<script>document.location="../index.php"</script>';

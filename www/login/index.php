@@ -25,7 +25,7 @@
 	<nav class="menu">
 		<ul>
 			<li><h1>EHLab 3.0.0</h1></li>
-			<li class="right"><a href="https://github.com/proxyanon/">GitHub</a></li>
+			<li class="right"><a href="https://github.com/proxyanon/EhLab">GitHub</a></li>
 		</ul>
 	</nav>
 </header>
@@ -56,9 +56,9 @@
 			<center>
 				<section class="login">
 					<form method="post">
-						<img src="https://cdn2.iconfinder.com/data/icons/user/512/user_login_man-512.png" width="150"><br>
-						<input type="text" name="username" placeholder="Nome de usuário"><br>
-						<input type="password" name="password" placeholder="**********"><br>
+						<img src="./home/img/user.png" width="150"><br><br>
+						<input type="text" name="username" placeholder="Nome de usuário"><br><br>
+						<input type="password" name="password" placeholder="**********"><br><br>
 						<?php
 						// Sem falhas de injection, somente bruteforce
 							if(isset($_POST['env'])):
@@ -70,7 +70,7 @@
 								if($stmt->rowCount() <= 0):
 									echo '<p class="error">Login falhou</p>';
 								else:
-									session_start();
+									@session_start();
 									$_SESSION['login'] = $username;
 									header("Location: home/");
 									echo '<script>document.location="home/"</script>';
