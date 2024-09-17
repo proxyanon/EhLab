@@ -9,7 +9,7 @@ session_start();
 <html lang="pt-br">
 <head>
 	<meta charset="utf-8">
-	<title>EhLab 3.0</title>
+	<title>EHLab 3.0.0</title>
 	<link rel="stylesheet" type="text/css" href="css/desafios.css" async defer>
 	<script type="text/javascript" src="login/home/js/jquery.min.js"></script>
 </head>
@@ -26,8 +26,8 @@ session_start();
 <header class="top">
 	<nav class="menu">
 		<ul>
-			<li><h1>EHLab 3.0</h1></li>
-			<li class="right"><a href="https://github.com/proxyanon/">GitHub</a></li>
+			<li><h1>EHLab 3.0.0</h1></li>
+			<li class="right"><a href="https://github.com/proxyanon/EhLab">GitHub</a></li>
 		</ul>
 	</nav>
 </header>
@@ -121,14 +121,17 @@ $(document).ready(function(){$("#close_pass").click(function (){$("#flag_pass").
 $(document).ready(function(){$("#close_firewall").click(function(){$("#flag_friewall").toggle("slow");});$(".firewall").click(function(){$("#flag_friewall").toggle("slow");});});
 </script>
 		<?php 
-			$error_flag = '<script>alert("Flag inválida !\r\nVocê não pontuou");</script>';
-			$success_flag = '<script>alert("Parabéns desafio concluido\r\nVocê ganhou pontos");</script>';
-			function upd_score($con, $flag, $pontos){
+			
+            $error_flag = '<script>alert("Flag inválida !\r\nVocê não pontuou");</script>';
+			$success_flag = '<script>alert("Parabéns desafio concluido\r\nVocê ganhou pontos");document.location.reload();</script>';
+			
+            function upd_score($con, $flag, $pontos){
 				$stmt = $con->prepare("UPDATE `score` SET `$flag` = ?");
 				$stmt->execute(array($pontos));
 				return true;
 			}
-			if(isset($_POST['send1'])):
+			
+            if(isset($_POST['send1'])):
 				// flag senha admin
 				$pass = filter_input(INPUT_POST, "password", FILTER_SANITIZE_SPECIAL_CHARS);
 				$password = md5($pass);

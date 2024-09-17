@@ -1,7 +1,7 @@
 <?php
 /*
 *	@version : 3.0.0
-*	Instalação expressa EhLab 3.0
+*	Instalação expressa EHLab 3.0.0
 */
 $passwd_admin = md5(rand()); // gera uma senha aleatória para o usuário administrador
 $host = "localhost";$user = "root";$pass = ""; // altere se necessário
@@ -43,7 +43,7 @@ $stmt->execute();
 	<style type="text/css">
 		@import url('https://fonts.googleapis.com/css?family=Roboto');
 		*{padding: 0px;box-sizing: border-box;margin:0px;}
-		body{width: 100%;height: 100%;background-color: black;background-image: url('https://images7.alphacoders.com/443/443779.jpg');background-size: 100%;}
+		body{width: 100%;height: 100%;background-color: black;background-image: url('bg.gif');background-size: 100%;}
 		section.success{position: absolute;width: 100%;padding: 8px;top: 25%;text-align: center;background-color: rgba(0,0,0,.85);z-index: 99;padding-bottom: 40px;padding-top: 20px;}
 		section.success h1 {font-family: arial, sans-serif;font-weight: normal;color: white;font-size: 2em;}
 		section.success a{text-decoration: none;padding: 8px;background-color: orange;border-radius: 5px;color: white;font-weight: normal;font-family: arial;font-weight: bold;}

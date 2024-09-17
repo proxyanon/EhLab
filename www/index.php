@@ -21,7 +21,7 @@ session_start();
 <header class="top">
 	<nav class="menu">
 		<ul>
-			<li><h1>EHLab 3.0</h1></li>
+			<li><h1>EHLab 3.0.0</h1></li>
 			<li class="right"><a href="https://github.com/proxyanon/">GitHub</a></li>
 		</ul>
 	</nav>
@@ -81,8 +81,8 @@ session_start();
 <header class="top">
 	<nav class="menu">
 		<ul>
-			<li><h1>EHLab 3.0</h1></li>
-			<li class="right"><a href="https://github.com/proxyanon/">GitHub</a></li>
+			<li><h1>EHLab 3.0.0</h1></li>
+			<li class="right"><a href="https://github.com/proxyanon/EhLab">GitHub</a></li>
 		</ul>
 	</nav>
 </header>
@@ -116,7 +116,7 @@ session_start();
 					<h2>Tecnologias</h2>
 						<li><p>PHP</p></li>
 						<li><p>MySQL</p></li>
-						<li><p>Html/Css/JavaScript</p></li>
+						<li><p>HTML/CSS/JAVASCRIPT</p></li>
 					<h2>O que fazer ?</h2>
 						<li><p>Descubra as falhas na programação das páginas e tente explora-las, com objetivo de completar os desafios e pontuar o score máximo.</p></li>
 				</ul>

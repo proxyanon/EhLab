@@ -8,7 +8,7 @@
 <html lang="pt-br">
 <head>
 	<meta charset="utf-8">
-	<title>EhLab 3.0</title>
+	<title>EHLab 3.0.0</title>
 	<link rel="stylesheet" type="text/css" href="../css/login.css" async defer>
 </head>
 <body>
@@ -24,7 +24,7 @@
 <header class="top">
 	<nav class="menu">
 		<ul>
-			<li><h1>EHLab 3.0</h1></li>
+			<li><h1>EHLab 3.0.0</h1></li>
 			<li class="right"><a href="https://github.com/proxyanon/">GitHub</a></li>
 		</ul>
 	</nav>
